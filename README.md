@@ -56,8 +56,8 @@ and deployed it to [Heroku](https://heroku.com) 😉
 ## Resources
 
 ### Jokes / Humor APIs
-- icanhazdadjoke.com
-- (Internet Chuck Norris Database API)[- http://www.icndb.com/api/]
+- [icanhazdadjoke.com](icanhazdadjoke.com)
+- [Internet Chuck Norris Database API](http://www.icndb.com/api/)
 
 ### Chatbot/NLP Libraries and Platforms
 Just a few of our favorites...
