@@ -1,18 +1,26 @@
 # Spruce Labs, Engineering Candidate Project
 
-Greetings Spruce Labs prospective candidate! If you're reading this, that means that you're pretty awesome because either you just found out how to apply to [Spruce Labs](https://sprucelabs.ai) -OR- we sent you a link and we want to get a taste of your superpowers...  
+Greetings Spruce Labs prospective candidate 🖖! It's pretty awesome you're here because it means that you either just found out how to apply to [Spruce Labs](https://sprucelabs.ai) -OR- we sent you a link to get a taste of your superpowers...  
 
-We at Spruce Labs feel that traditional code tests are boring and shallow. As such, we believe that the best way to get a flavor for what-you-do is to bring an idea to life!  So, what does that mean? That means that we'll be leaving most of the decisions about what and how to build this mini-project completely up to you.  Of course we want to see beautiful code and technical wizardry, but, just as important to us is your approach and creative execution - we'll want to hear all about your strategy and design of the featureset.  The ultimate goal here is to learn a lot about you.  Inevitably, through the process of this work - you will also learn a lot about us.  We hope you enjoy the test, and that you build something that you are proud enough to share with the world.  We are beyond excited to see what you come up with...
+This not a traditional code test. That would not do you justice. Rather, we think the best way to get a flavor for what-you-do is to bring an idea to life!  
+
+Meaning that almost everything about how you accomplish it is up to you!  
+
+Of course we want to see beautiful code and technical wizardry, but, just as important to us is your approach and creative execution. After, we'll want to hear all your thoughts, from strategy to design.  The ultimate goal here is to learn a lot about you.  Inevitably, through the process - you will also learn a lot about us.  
+
+We hope you enjoy the test, and that you build something that you are proud enough to share with the world.  We are beyond excited to see what you come up with...
 
 ## Project Overview
 
-Your mission, if you choose to accept it is to : build a chatbot with a web-based user interface.  The purpose of this chatbot is to make people laugh. At the highest level, the user story for this project is : "As a user, I should laugh as a result of interacting with this chatbot".
+Your mission, if you choose to accept it : build a chatbot with a web-based user interface.  The purpose of this chatbot is to make people laugh. At the highest level, the `User Story` for this project is : 
+
+"As a user, I should laugh as a result of f****ing hilarious internet robot, wtf?".
 
 **Key Strategic Insight :**
 One of the most universally common inputs to a chatbot is : "Tell me a joke"
 
 ## Design / High-Fidelity Wireframes
-We've taken the liberty of creating a high-fidelity wireframe for what your bot should look like.  This is intended to serve as a sketch, not a blueprint.  Ultimately, the visual interface is your decision and this is not an exercise in comp-matching, although there are times when that is important to us... Basically, make it work well and make it beautiful.
+We've taken the liberty of creating a high-fidelity wireframe for what your bot could look like.  This is intended to serve as a sketch, not a blueprint.  This is not an excersize in comp matching. Basically, make it work well and make it beautiful.
 
 ![Chatbot Design](https://s3.us-east-2.amazonaws.com/sprucelabs-misc/images/SpruceLabs-Humor-Bot-325x608.png)
 
@@ -27,19 +35,18 @@ We've taken the liberty of creating a high-fidelity wireframe for what your bot 
 ## Objectives
 
 - Build a functional chatbot and deploy it to someplace it can be seen and played with.
-- Deliver a codebase that you are proud of, quality over quantity of functionality - we realize that our candidates are busy.
-- Build a beautiful interface based on the high-fidelity wireframes provided above.
+- Deliver a codebase that you are proud of, quality over quantity of functionality - we realize that you are busy.
+- Build a beautiful interface based inspired by wireframes provided above.
 - Document your application and be prepared to demo both the functionality and codebase to our team.
 - Be able to present your work during a 30minute review session with our product and engineering teams.
 
 ## Requirements
-We'd think it's really cool if you use pieces of our stack (nudge, nudge, wink, wink):
+Obvs we would love it if you used our current stack, but not doing so will not count against you.
 - [ReactJS](https://reactjs.org/)
 - [ReduxJS](https://redux.js.org/)
 - [NextJS](https://github.com/zeit/next.js/)
 - [Express](https://expressjs.com/) or [KoaJS](http://koajs.com/)
-
-and deployed it to [Heroku](https://heroku.com) 😉 
+- [Heroku](https://heroku.com) 😉 
 
 ## Expectations
 - That your app is running at a domain that we can view
@@ -47,6 +54,7 @@ and deployed it to [Heroku](https://heroku.com) 😉
 - That your visual interface connects to an API or backend of some sort
 - That a user can ask it "Tell me a joke" and it responds with - something...
 - That you deliver a codebase that you feel represents your potential and virtues that you would bring to Spruce Labs.
+- One laugh from one person at the demo, excuding you.
 
 ## Instructions
 1. Fork this repo
