@@ -14,7 +14,7 @@ We hope you enjoy the test, and that you build something that you are proud enou
 
 Your mission, if you choose to accept it : build a chatbot with a web-based user interface.  The purpose of this chatbot is to make people laugh. At the highest level, the `User Story` for this project is : 
 
-"As a user, I should laugh as a result of f****ing hilarious internet robot, wtf?".
+"As a user, I should laugh as a result of this f****ing hilarious internet robot, wtf?".
 
 **Key Strategic Insight :**
 One of the most universally common inputs to a chatbot is : "Tell me a joke"
