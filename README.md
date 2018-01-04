@@ -38,7 +38,7 @@ We've taken the liberty of creating a high-fidelity wireframe for what your bot 
 - Deliver a codebase that you are proud of, quality over quantity of functionality - we realize that you are busy.
 - Build a beautiful interface based inspired by wireframes provided above.
 - Document your application and be prepared to demo both the functionality and codebase to our team.
-- Be able to present your work during a 30minute review session with our product and engineering teams.
+- Be able to present your work during a 30 minute review session with our product and engineering teams.
 
 ## Requirements
 Obvs we would love it if you used our current stack, but not doing so will not count against you.
@@ -54,7 +54,7 @@ Obvs we would love it if you used our current stack, but not doing so will not c
 - That your visual interface connects to an API or backend of some sort
 - That a user can ask it "Tell me a joke" and it responds with - something...
 - That you deliver a codebase that you feel represents your potential and virtues that you would bring to Spruce Labs.
-- One laugh from one person at the demo, excuding you.
+- One laugh from one person at the demo, excluding you.
 
 ## Instructions
 1. Fork this repo
