@@ -9,7 +9,7 @@ We at Spruce Labs feel that traditional code tests are boring and shallow. As su
 Your mission, if you choose to accept it is to : build a chatbot with a web-based user interface.  The purpose of this chatbot is to make people laugh. At the highest level, the user story for this project is : "As a user, I should laugh as a result of interacting with this chatbot".
 
 **Key Strategic Insight :**
-One of the most universally common questions to chatbots is : "Tell me a joke"
+One of the most universally common inputs to a chatbot is : "Tell me a joke"
 
 ## Design / High-Fidelity Wireframes
 We've taken the liberty of creating a high-fidelity wireframe for what your bot should look like.  This is intended to serve as a sketch, not a blueprint.  Ultimately, the visual interface is your decision and this is not an exercise in comp-matching, although there are times when that is important to us... Basically, make it work well and make it beautiful.
