@@ -2,11 +2,11 @@
 
 Greetings Spruce Labs prospective candidate 🖖! It's pretty awesome you're here because it means that you either just found out how to apply to [Spruce Labs](https://sprucelabs.ai) -OR- we sent you a link to get a taste of your superpowers...  
 
-This not a traditional code test. That would not do you justice. Rather, we think the best way to get a flavor for what-you-do is to bring an idea to life!  
+This is not a traditional code test. That would not do you justice. Rather, we think the best way to get a flavor for what-you-do is to have you bring an idea to life!  
 
-Meaning that almost everything about how you accomplish it is up to you!  
+Meaning that almost everything about how you accomplish this project is up to you!  
 
-Of course we want to see beautiful code and technical wizardry, but, just as important to us is your approach and creative execution. After, we'll want to hear all your thoughts, from strategy to design.  The ultimate goal here is to learn a lot about you.  Inevitably, through the process - you will also learn a lot about us.  
+Of course, we want to see beautiful code and technical wizardry. But, just as important to us is your approach and creative execution. After, we'll want to hear all your thoughts, from strategy to design.  The ultimate goal here is to learn a lot about you.  Inevitably, through the process - you will also learn a lot about us.  
 
 We hope you enjoy the test, and that you build something that you are proud enough to share with the world.  We are beyond excited to see what you come up with...
 
