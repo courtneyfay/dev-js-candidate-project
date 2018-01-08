@@ -1,0 +1,25 @@
+{
+  "name": "dev-js-candidate-project",
+  "version": "1.0.0",
+  "description": "Greetings Spruce Labs prospective candidate 🖖! It's pretty awesome you're here because it means that you either just found out how to apply to [Spruce Labs](https://sprucelabs.ai) -OR- we sent you a link to get a taste of your superpowers...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtneyfay/dev-js-candidate-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/courtneyfay/dev-js-candidate-project/issues"
+  },
+  "homepage": "https://github.com/courtneyfay/dev-js-candidate-project#readme",
+  "dependencies": {
+    "next": "^4.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
