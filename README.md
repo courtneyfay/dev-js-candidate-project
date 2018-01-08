@@ -1,4 +1,4 @@
-# Spruce Labs, Engineering Candidate Project
+# Spruce Labs, Courtney Fay's Project
 
 Greetings Spruce Labs prospective candidate 🖖! It's pretty awesome you're here because it means that you either just found out how to apply to [Spruce Labs](https://sprucelabs.ai) -OR- we sent you a link to get a taste of your superpowers...  
 
