@@ -39,14 +39,14 @@ class Chat extends Component {
 			let answer = "Please, repeat your question."
 
 			if (res.output.text.length) {
-				if (res.output.text[0] {
+				if (res.output.text[0]) {
 					answer = res.output.text[0]
-				}) else if (res.output.text[1]) {
+				} else if (res.output.text[1]) {
 					answer = res.output.text[1]
 				}
 			}
 
-			let answer = res.output.text[0] ? res.output.text[0] : res.output.text[1] ? res.output.text[1] : "Please, repeat your question"
+			//let answer = res.output.text[0] ? res.output.text[0] : res.output.text[1] ? res.output.text[1] : "Please, repeat your question"
 		
 			let attr = res.context && res.context.genre ? {genre: res.context.genre}: {}
 

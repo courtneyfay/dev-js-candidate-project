@@ -32,16 +32,17 @@ class Suggest extends Component {
 		return(
 			<div className="results-movies">
 				{this.state.result && this.state.result.length ? this.state.result.map((movie, i) => {
-					return <div key={i} className="result">
+					<div key={i} className="result">
 						<figure className="figure-result">
 							<img src={"https://image.tmdb.org/t/p/w185" + movie.poster_path} />
 						</figure>
 						<div className="footer-result">
 							<b onClick={() => this.viewSynopsis(movie) }>See Synopsis</b>
 						</div>
+					</div>
 				}): null}
 			</div>
-		)
+		) 	
 	}
 }
 

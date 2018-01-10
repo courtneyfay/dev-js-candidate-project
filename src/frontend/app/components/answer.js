@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Translate from './translate'
 import Suggest from './suggest'
 
 class Answer extends Component {
@@ -18,8 +17,8 @@ class Answer extends Component {
 	render() {
 		const { text, who, context, attr, setMessage} = this.props
 		return(
-			<div className={"answer _answer-" + who}
-				<img src={"images/avatar-" + who + ".png" className="avatar"} />
+			<div className={"answer _answer-" + who}>
+				<img src={"images/avatar-" + who + ".png"} className="avatar" />
 				<div className={"answer-content answer-" + who}>
 					<div>
 						<span dangerouslySetInnerHTML={{__html: text}}></span>
