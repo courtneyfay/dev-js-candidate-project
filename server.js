@@ -1,11 +1,9 @@
-const express = require('express')
-const App = require('./app.js')
+require('dotenv').config()
 
-const app = express()
+let server = require('./app.js')
+let port = process.env.PORT || process.env.VCAP_APP_PORT || 3000
 
-app.use('/', App);
-
-app.listen(3000, (err) => {
+server.listen(port, (err) => {
 	if (err) throw err
-	console.log('> Ready on http://localhost:3000')
+	console.log(`Server running on port: ${port}`)
 })

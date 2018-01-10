@@ -1,7 +1,10 @@
-let Conversation = require('watson-developer-cloud/conversation/v1')
+let watson = require('watson-developer-cloud')
 
-let conversation = new Conversation({
-	version_date: Conversation.VERSION_DATE_2017_04_21
+let conversation = watson.conversation({
+	username: process.env.CONVERSATION_USERNAME,
+	password: process.env.CONVERSATION_PASSWORD,
+	version: 'v1',
+	version_date: '2017-05-26'
 })
 
 function updateMessage(input, response) {
@@ -29,9 +32,8 @@ function updateMessage(input, response) {
 }
 
 let message = function(req, res) {
-	let workspace = process.env.WORKSPACE_ID
 	let payload = {
-		workspace_id: workspace,
+		workspace_id: process.env.WORKSPACE_ID,
 		context: req.body.context || {},
 		input: req.body.input || {}
 	}

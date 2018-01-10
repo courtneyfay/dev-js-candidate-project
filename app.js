@@ -1,16 +1,14 @@
 let express = require('express')
 let bodyParser = require('body-parser')
-
+let message = require('./routes/message')
+let suggestion = require('./routes/suggestion')
 let app = express()
 
 app.use(express.static('./public'))
 app.use(bodyParser.json())
 
-//COMMENT THIS BACK IN!!
-let message = require('./routes/message')
+//ROUTES
 app.post('/api/message', message)
-
-let suggestion = require('./routes/suggestion')
 app.post('/api/suggestion', suggestion)
 
 module.exports = app
