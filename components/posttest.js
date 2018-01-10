@@ -1,16 +1,15 @@
 import Layout from '../components/MyLayout'
 import fetch from 'isomorphic-unfetch'
 
-const Post = (props) => (
+const PostTest = (props) => (
 	<Layout>
-		<h1>{props.show.name}</h1>
-		<p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
-		<img src={props.show.image.medium}/>
+		<p>{props.show}</p>
 	</Layout>
 )
 
-Post.getInitialProps = async function (context) {
-	const { id } = context.query
+PostTest.getInitialProps = async function () {
+	console.log('hitting getInitialProps for PostTest')
+	const { id } = 975
 	const res = await fetch(`https://api.tvmaze.com/shows/${id}`)
 	const show = await res.json()
 
@@ -19,4 +18,4 @@ Post.getInitialProps = async function (context) {
 	return { show }
 }
 
-export default Post
+export default PostTest
