@@ -10,6 +10,7 @@ class Suggest extends Component {
 	}
 
 	loadSuggest(){
+		console.log("hitting loadSuggest")
 		let attrs = this.props.attr
 		console.log(attrs)
 		requestAPI('suggestion', 'POST', attrs).then(res => {
@@ -24,11 +25,14 @@ class Suggest extends Component {
 	}
 
 	viewSynopsis(movie){
+		console.log("hitting viewSynopsis")
 		this.props.setMessage("<b>" + movie.title + ": </b>" + movie.overview, "ai")
 	}
 
 	render(){
 		const {setMessage} = this.props
+		console.log("suggest.js render()")
+		console.log(this.state.result)
 		return(
 			<div className="results-movies">
 				{this.state.result && this.state.result.length ? this.state.result.map((movie, i) => {
