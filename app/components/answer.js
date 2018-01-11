@@ -16,9 +16,7 @@ class Answer extends Component {
 						<span dangerouslySetInnerHTML={{__html: text}}></span>
 					</div>
 				</div>
-				{attr.genre ?
-					<Suggest attr={attr} setMessage={setMessage} />
-				: null}
+				<Suggest attr={attr} setMessage={setMessage} />
 			</div>
 		)
 	}

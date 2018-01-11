@@ -48,7 +48,7 @@ class Chat extends Component {
 
 			//let answer = res.output.text[0] ? res.output.text[0] : res.output.text[1] ? res.output.text[1] : "Please, repeat your question"
 		
-			let attr = res.context && {genre: 'Drama'} //res.context.genre ? : {}
+			let attr = {genre: 'Drama'} //res.context.genre ? : {}
 
 			this.setMessage(answer, "ai", attr)
 			this.setState({context: res.context})
