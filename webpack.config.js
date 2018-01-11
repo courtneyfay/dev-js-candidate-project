@@ -2,14 +2,18 @@ const webpack = require('webpack')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 let path = require('path')
 
-let BUILD_DIR = path.resolve(__dirname, 'src/frontend/public')
-let APP_DIR = path.resolve(__dirname, 'src/frontend/app')
+console.log(__dirname)
+
+//let BUILD_DIR = path.resolve(__dirname, 'src/frontend/public')
+//let APP_DIR = path.resolve(__dirname, 'src/frontend/app')
 
 let config = {
-	context: APP_DIR,
-	entry: './app.js',
+	//context: APP_DIR,
+	//entry: './app.js',
+	entry: __dirname + '/app/app.js',
 	output: {
-		path: BUILD_DIR,
+		// path: BUILD_DIR,
+		path: __dirname + '/public',
 		filename: 'bundle.js'
 	},
 	module: {

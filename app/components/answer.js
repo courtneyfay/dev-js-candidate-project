@@ -4,15 +4,15 @@ import Suggest from './suggest'
 class Answer extends Component {
 	constructor(props) {
 		super(props)
-		this.state = {translate: ""}
-		this.setTranslate = this.setTranslate.bind(this)
+		//this.state = {translate: ""}
+		//this.setTranslate = this.setTranslate.bind(this)
 	}
 
-	setTranslate(result) {
-		this.setState({
-			translate: result
-		})
-	}
+	// setTranslate(result) {
+	// 	this.setState({
+	// 		translate: result
+	// 	})
+	// }
 
 	render() {
 		const { text, who, context, attr, setMessage} = this.props
