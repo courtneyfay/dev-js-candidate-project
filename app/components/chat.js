@@ -57,7 +57,7 @@ class Chat extends Component {
 		})
 	}
 
-	submitInput() {
+	submitInput(e) {
 		let text = e.target.value
 		if (e.key === 'Enter' && text) {
 			this.setMessage(text)
