@@ -1,6 +1,21 @@
 import React, { Component } from 'react'
 import Joke from './joke'
 
+let aiStyle = {
+	backgroundColor: 'blue',
+	fontSize: '100px'
+}
+
+let personStyle = {
+	backgroundColor: 'red',
+	fontSize: '300px'
+}
+
+let divStyle = {
+	backgroundColor: 'orange',
+	fontSize: '5px'
+}
+
 class Answer extends Component {
 	constructor(props) {
 		super(props)
@@ -9,8 +24,10 @@ class Answer extends Component {
 	render() {
 		const { text, who, context, attr, setMessage} = this.props
 
+		let divStyle = who + "Style"
+
 		return(
-			<div className={"answer _answer-" + who}>
+			<div styles={divStyle}>
 				<img src={"images/avatar-" + who + ".png"} className="avatar" />
 				<div className={"answer-content answer-" + who}>
 					{ text === "joke" ? 
@@ -19,7 +36,7 @@ class Answer extends Component {
 						</div>
 						: 
 						<div>
-							<span dangerouslySetInnerHTML={{__html: text}}></span>
+							<p dangerouslySetInnerHTML={{__html: text}}></p>
 						</div> 
 					}	
 				</div>

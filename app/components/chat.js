@@ -2,6 +2,28 @@ import React, { Component } from 'react'
 import Answer from './answer'
 import requestAPI from '../api'
 
+let divStyle = {
+	fontFamily: 'sans-serif',
+	fontSize: '1rem',
+	height: 'calc(100% - 4rem)',
+	margin: '0.75rem',
+	overflowY: 'auto',
+	overflowX: 'hidden'
+}
+
+let inputStyle = {
+	border: 'none',
+	borderBottom: '1px solid black',
+	background: 'transparent',
+	color: '#323232',
+	fontSize: '1rem',
+	height: '2.5rem',
+	marginBottom: '-0.125rem',
+	width: '100%',
+	outline: 'none',
+	paddingLeft: '0.125rem'
+}
+
 class Chat extends Component {
 	constructor(props){
 		super(props)
@@ -68,13 +90,13 @@ class Chat extends Component {
 	render() {
 		return(
 			<div>
-				<div className="answers" id="answers">
+				<div style={divStyle} id="answers">
 					{this.state.messages && this.state.messages.length ? this.state.messages.map((msg, i) => 
 						<Answer key={i} text={msg.text} who={msg.who} attr={msg.attr} context={this.state.context} setMessage={this.setMessage} />
 					) : null}
 				</div>
 				<div>
-					<input type="text" className="input-question" placeholder="Write something here..."
+					<input type="text" style={inputStyle} placeholder="Type something..."
 						onKeyPress={this.submitInput} />
 				</div>
 			</div>
