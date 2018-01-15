@@ -1,7 +1,7 @@
 # Jokebot
 
 ## Try it now!
-[JokeBot](https://racecube.herokuapp.com/)
+[JokeBot](https://jokebot-spruce.herokuapp.com/)
 
 ![alt text](public/images/jokebot.png "Jokebot")
 
