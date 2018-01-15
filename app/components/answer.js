@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Joke from './joke'
 
 const divStyle = {
+	alignItems: 'center',
 	backgroundColor: 'orange',
 	borderBottomRightRadius: '0',
 	borderRadius: '1.25rem',
@@ -9,64 +10,63 @@ const divStyle = {
 	margin: '0.25rem'
 }
 
-const imgStyle = {
-	height: '30px',
-	margin: '0.25rem',
-	verticalAlign: 'text-bottom'
-}
-
 const aiStyle = {
-	backgroundColor: 'blue',
-	fontSize: '100px'
+	backgroundColor: 'blue'
 }
 
 const personStyle = {
-	backgroundColor: 'red',
-	fontSize: '300px'
+	backgroundColor: 'red'
+}
+
+const imgStyle = {
+	height: '30px',
+	margin: '0 0.50rem'
 }
 
 class Answer extends Component {
 	constructor(props) {
 		super(props)
-		// this.state = {style: {}}
-		// this.setStyle = this.setStyle.bind(this)
+		this.state = {style: {}}
+		this.setStyle = this.setStyle.bind(this)
 	}
 
-	// setStyle(who) {
-	// 	let style = who + 'Style'
-	// 	console.log("setStyle style:")
-	// 	console.log(style)
+	setStyle(who) {
+		if (who === "ai") {
+			this.setState({
+				style: aiStyle
+			})
+		} else {
+			this.setState({
+				style: personStyle
+			})
+		}
+	
+		console.log("setStyle(): ")
+		console.log(this.state.style)
+	}
 
-	// 	this.setState({
-	// 		style: styles.style
-	// 	})
-
-	// 	console.log("setStyle(): ")
-	// 	console.log(this.state.style)
-	// }
-
-	// componentWillMount() {
-		// this.setStyle(this.props.who)
-	// }
+	componentWillMount() {
+		this.setStyle(this.props.who)
+	}
 
 	render() {
 		const { text, who, context, attr, setMessage} = this.props	
-		// let style = this.state.style
+		let style = this.state.style
 
 		return(
 			<div style={divStyle}>
-				<img src={"images/avatar-" + who + ".png"} style={imgStyle} />
-				<div className={"answer-content answer-" + who}>
+				<div style={style}>
+					<img src={"images/avatar-" + who + ".png"} style={imgStyle} />
 					{ text === "joke" ? 
-						<div className="result-joke">
+						<div>
 							<Joke attr={attr} setMessage={setMessage} />
 						</div>
 						: 
 						<div>
 							<p dangerouslySetInnerHTML={{__html: text}}></p>
 						</div> 
-					}	
-				</div>
+					}
+				</div>	
 			</div>
 		)
 	}
