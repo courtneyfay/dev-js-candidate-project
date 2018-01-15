@@ -4,7 +4,6 @@ import Joke from './joke'
 const divStyle = {
 	alignItems: 'center',
 	backgroundColor: 'orange',
-	borderBottomRightRadius: '0',
 	borderRadius: '1.25rem',
 	color: 'black',
 	display: 'flex',
@@ -17,8 +16,7 @@ const imgStyle = {
 	margin: '0 0.50rem'
 }
 
-const pStyle = {
-}
+const pStyle = {}
 
 class Answer extends Component {
 	constructor(props) {
@@ -35,7 +33,7 @@ class Answer extends Component {
 			divStyle.backgroundColor = '#0078FF', //blue background
 			divStyle.color = '#FFF', //white text
 			divStyle.justifyContent = 'flex-end',
-			pStyle.margin = '1em 1em 1em 0'
+			pStyle.marginRight = '0.50rem'
 		}
 	}
 
