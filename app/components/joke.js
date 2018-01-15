@@ -1,21 +1,6 @@
 import React, { Component } from 'react'
 import requestAPI from '../api'
 
-/*.result-jokes {
-  position: relative;
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: 0.015rem;
-  line-height: 1.3125rem;
-  background: #00B4A0;
-  border-radius: 1.25rem;
-  border-bottom-right-radius: 0;
-  text-align: left;
-  display: inline-block;
-  margin-left: 2.5rem;
-  min-width: 2.5rem;
-}*/
-
 class Joke extends Component {
 	constructor(props) {
 		super(props)

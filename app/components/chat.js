@@ -2,13 +2,19 @@ import React, { Component } from 'react'
 import Answer from './answer'
 import requestAPI from '../api'
 
-const divStyle = {
+const answerStyle = {
 	fontFamily: 'sans-serif',
 	fontSize: '1rem',
 	height: 'calc(100% - 4rem)',
-	margin: '0.75rem',
+	margin: '0 auto',
 	overflowY: 'auto',
-	overflowX: 'hidden'
+	overflowX: 'hidden',
+	width: '70%'
+}
+
+const divStyle = {
+	margin: '0 auto',
+	width: '70%'
 }
 
 const inputStyle = {
@@ -19,9 +25,9 @@ const inputStyle = {
 	fontSize: '1rem',
 	height: '2.5rem',
 	marginBottom: '-0.125rem',
-	width: '100%',
 	outline: 'none',
-	paddingLeft: '0.125rem'
+	paddingLeft: '0.125rem',
+	width: '100%'
 }
 
 class Chat extends Component {
@@ -90,13 +96,13 @@ class Chat extends Component {
 	render() {
 		return(
 			<div>
-				<div style={divStyle} id="answers">
+				<div style={answerStyle} id="answers">
 					{this.state.messages && this.state.messages.length ? this.state.messages.map((msg, i) => 
 						<Answer key={i} text={msg.text} who={msg.who} attr={msg.attr} context={this.state.context} setMessage={this.setMessage} />
 					) : null}
 				</div>
-				<div>
-					<input type="text" style={inputStyle} placeholder="Type something..."
+				<div style={divStyle}>
+					<input autoFocus type="text" style={inputStyle} placeholder="Type something..."
 						onKeyPress={this.submitInput} />
 				</div>
 			</div>
