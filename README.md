@@ -1,6 +1,6 @@
 # Jokebot
 
-## Try it now! [JokeBot](https://jokebot-spruce.herokuapp.com/)
+## Try it now: [JokeBot jokebot-spruce.herokuapp.com](https://jokebot-spruce.herokuapp.com/)
 
 ![alt text](public/images/jokebot.png "Jokebot")
 
