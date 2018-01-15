@@ -35,8 +35,9 @@
 -----------------------------
 ## Todo List
 
-- [ ] Add moar better jokes to the API
+- [X] Add moar better jokes to the API
 - [ ] Add "..." animation when waiting for a joke to come back from the API
+- [ ] Find a way to prevent API from return the same joke multiple times in one chat instance
 - [ ] Find a way to handle negatives in the request to the chatbot, i.e. "Don't tell me a joke"
 - [ ] Convert to Next.js
 - [ ] Add Redux into the mix
