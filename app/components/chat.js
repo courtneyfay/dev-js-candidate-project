@@ -12,7 +12,6 @@ class Chat extends Component {
 	}
 
 	setMessage(text, who = "person", attr = {}) {
-		console.log(text)
 		let answer = {text: text, who: who, attr: attr}
 		this.setState({
 			messages: [...this.state.messages, answer]
@@ -36,19 +35,13 @@ class Chat extends Component {
 		}
 
 		requestAPI("message", "POST", parameters).then(res => {
-			let answer = "Please, repeat your question."
-
-			if (res.output.text.length) {
-				if (res.output.text[0]) {
-					answer = res.output.text[0]
-				} else if (res.output.text[1]) {
-					answer = res.output.text[1]
-				}
+			let jokeNode = "node_3_1515559528388"
+			let answer = res.output.text[0]
+			let attr = {}
+			
+			if (res.output.nodes_visited[0] === jokeNode) {
+				answer = "joke"
 			}
-
-			//let answer = res.output.text[0] ? res.output.text[0] : res.output.text[1] ? res.output.text[1] : "Please, repeat your question"
-		
-			let attr = {genre: 'Drama'} //res.context.genre ? : {}
 
 			this.setMessage(answer, "ai", attr)
 			this.setState({context: res.context})
@@ -59,6 +52,7 @@ class Chat extends Component {
 
 	submitInput(e) {
 		let text = e.target.value
+
 		if (e.key === 'Enter' && text) {
 			this.setMessage(text)
 			this.scrollAnswer()
@@ -76,8 +70,7 @@ class Chat extends Component {
 			<div>
 				<div className="answers" id="answers">
 					{this.state.messages && this.state.messages.length ? this.state.messages.map((msg, i) => 
-						<Answer key={i} text={msg.text} who={msg.who} attr={msg.attr}
-						context={this.state.context} setMessage={this.setMessage} />
+						<Answer key={i} text={msg.text} who={msg.who} attr={msg.attr} context={this.state.context} setMessage={this.setMessage} />
 					) : null}
 				</div>
 				<div>

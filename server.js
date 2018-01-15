@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 let server = require('./app.js')
-let port = process.env.PORT || process.env.VCAP_APP_PORT || 3000
+let port = process.env.PORT || 3000
 
 server.listen(port, (err) => {
 	if (err) throw err
