@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Answer from './answer'
 import requestAPI from '../api'
 
-let divStyle = {
+const divStyle = {
 	fontFamily: 'sans-serif',
 	fontSize: '1rem',
 	height: 'calc(100% - 4rem)',
@@ -11,7 +11,7 @@ let divStyle = {
 	overflowX: 'hidden'
 }
 
-let inputStyle = {
+const inputStyle = {
 	border: 'none',
 	borderBottom: '1px solid black',
 	background: 'transparent',
