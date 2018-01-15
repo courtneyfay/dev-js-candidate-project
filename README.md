@@ -1,7 +1,6 @@
 # Jokebot
 
-## Try it now!
-[JokeBot](https://jokebot-spruce.herokuapp.com/)
+## Try it now! [JokeBot](https://jokebot-spruce.herokuapp.com/)
 
 ![alt text](public/images/jokebot.png "Jokebot")
 
@@ -23,10 +22,10 @@
 -----------------------------
 ## The General Approach
 
-* Wanted to use the Spruce technology stack, so I started by following a [Next tutorial](https://learnnextjs.com/), then realized how hard it was going to be to adapt for this project and how little documentation there is for it
-* Changed gears and followed a tutorial on how to create a movie recommender with React and Watson [see link here](https://developer.ibm.com/recipes/tutorials/how-to-create-a-chatbot-of-movie-recommendations-with-reactjs-and-connect-it-to-facebook-messenger/), but it had lots of bugs, was half-written in Spanish, and was missing some files (e.g. webpack and css) 
+* Wanted to use the Spruce technology stack, so I started by following a [Next tutorial](https://learnnextjs.com/), then realized how little documentation there is for it
+* Changed gears and followed a tutorial on how to create a movie recommender with React and Watson ([see link here](https://developer.ibm.com/recipes/tutorials/how-to-create-a-chatbot-of-movie-recommendations-with-reactjs-and-connect-it-to-facebook-messenger/)), but it had lots of bugs, was half-written in Spanish, and was missing some files (e.g. webpack and css) 
 * Tried to think of something funny beyond the recommended APIs and did some research but didn't really find anything I liked. Finally settled on deploying my own custom API which borrows heavily from the [Developer Excuses API](http://developerexcuses.com/)
-* Wanted the design to be sleek and unintrusive. In the original tutorial, they used classes and ids to style everything, but the documentation I read said that React components worked better with inline styling. Accidentally used flexbox for the first time when following along with some of the recommended style help
+* Wanted the design to be simple, sleek and unintrusive. In the original tutorial, they used classes and ids to style everything, but the documentation I read said that React components worked better with inline styling. Also accidentally used flexbox for the first time when following along with some of the recommended style guides
 
 -----------------------------
 ## User Stories
