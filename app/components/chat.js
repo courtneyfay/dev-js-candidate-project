@@ -68,7 +68,7 @@ class Chat extends Component {
 			let attr = {}
 			
 			if (res.output.nodes_visited[0] === jokeNode) {
-				answer = "joke"
+				answer = "1988"
 			}
 
 			this.setMessage(answer, "ai", attr)

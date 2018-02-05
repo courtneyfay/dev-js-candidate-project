@@ -47,7 +47,7 @@ class Answer extends Component {
 		return(
 			<div style={divStyle}>
 				<img src={"images/avatar-" + who + ".png"} style={imgStyle} />
-				{ text === "joke" ? 
+				{ text === "1988" ? 
 					<div>
 						<Joke attr={attr} setMessage={setMessage} />
 					</div>
